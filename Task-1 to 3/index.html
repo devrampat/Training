@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<doc lan="'eng">
+<head></head>
+<body>
+    <div>
+     <h1> Nested Unordered List</h1>
+    <ul>
+       <li>Clothing</li>
+           <ul>
+            <li> Mens Clothing</li>
+            <li> Womens Clothing </li>
+            <li> Kids Clothing</li>
+           </ul>
+        <li> Pharmacy </li>
+        <ul>
+            <li> Medicines </li>
+            <ul>
+                <li> In-store</li>
+                <li> Pickup </li>
+            </ul>
+            <li> Medical Equipment </li>
+            <li> Medical Plans</li>
+        </ul>
+        <li> Groceries </li>
+        <ul>
+            <li> Vegtables</li>
+            <ul>
+                <li> Fresh </li>
+                <li> Whole foods </li>
+                <li> Everyday Essentials</li>
+            </ul>
+            <li> Fruits </li>
+            <li> Eatery </li>
+        </ul>
+        <li> Entertainment </li>
+        <ul>
+            <li> Music </li>
+            <li> Prime Movies </li>
+            <li> Alexa </li>
+        </ul>
+    </ul>
+    </div>
+
+    <div>
+       <h2> TABLE </h2>
+       <table class="decor">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td> Product A </td>
+            <td> Fashion </td>
+            <td> $140.00 </td>
+            <td> 17 </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td> Product B </td>
+            <td> Sports </td>
+            <td> $125.04 </td>
+            <td> 39 </td>
+          <tr>
+            <tr>
+            <td> 3 </td>
+            <td> Product C </td>
+            <td> Tools </td>
+            <td> $200.17 </td>
+            <td> 20 </td>
+          <tr>
+          <tr>
+            <td> 4 </td>
+            <td> Product D </td>
+            <td> Electronics </td>
+            <td> $146.02 </td>
+            <td> 34 </td>
+          <tr>
+          <tr>
+            <td> 5 </td>
+            <td> Product E </td>
+            <td> Home </td>
+            <td> $179 </td>
+            <td> 05 </td>
+          <tr>
+          <tfoot>
+                <td colspan="5"> Product details: These are the details of the products that are available in-store.</td>
+          </tfoot>
+        </table>
+    </div>
+    <style>
+    .decor {
+        border: 1px solid;
+        border-color: black;
+        border-collapse: collapse;
+        border-width: 3px;
+        width:max-content;
+    }
+    .decor th,.decor td {
+        border: 1px solid;
+        border-color: black;
+        border-width: 2px;
+        text-align: left;
+        padding: 10px;
+    }
+    </style>
+   
+   <div class="play">
+    <h3> Registration Form</h3>
+    <form>
+        <lable for="name">First Name: </lable>
+        <input type="text" name="name" required><br>
+        <lable for="name">Last Name: </lable>
+        <input type="text" name="name" required><br>
+        <lable for="email"> Email: </lable>
+        <input type="email" name="email" required><br>
+        <lable for="phone"> Mobile: </lable>
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        <lable for="password">Password: </lable>
+        <input type="text" name="password" required><br>
+        <button type="submit"> Submit </button>
+        <button type="Cancel"> Cancel </button>
+    </form>
+   </div>
+
+   <style>
+    .play {
+        background-color: white;
+        padding: 20px;
+        width: 200px;
+        margin: 50px;
+    }
+   </style>
+</body>
