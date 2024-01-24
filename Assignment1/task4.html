@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #goToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FLY HIGH STAFFING LLC</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="https://flyhightalent.com/">About</a>
+        <a href="https://flyhightalent.com/pages/contact-us">Contact Us</a>
+        <a href="https://flyhightalent.com/pages/career-exploration">Services</a>
+    </nav>
+    <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABXFBMVEX///8AJ2i/ET0AAFz6+vrGDzr09PMAJmfEEDsAImbBETwAAFoAKGvz8/IAIGX4+Pfs7OsAHGMAGGIADV8AE2EAG2Oeo7gAEF8AFmEACl6JGk4ABl0AAFdDVYOqFEO4Ej5qeJqWGEqwE0E+I2CCG1DR1d/q7fJ7HFKmFUVsHlZkcZW1u8xzHVXO096NGU0uRHlTIVxcIFo3JGEqJWO8ACzh5OudF0jNDjegqb6QmbJ9iKYuJGJlH1fDACVIIl7/8vNRYoywt8caNnFYaI+vAC0MQXqFkKzVrrq3Q2EqAEzDXnXeyNDOl6XFnay1AC7NvspfAEwuVIR4dZbi1NuJYIGhTGyxjaG3q7uLVXiFAD7FLFClADT54uYoE1vRboDel6TpwchkAELHgJJmX4bkqbOlACLQR2FOAFHVX3NBFVmZdJDPdIaYgp29a4O6i59pUnxPR3e/bYK3P10AAEpt0/75AAAOCklEQVR4nO2ci18aVxbHZ7iM87qhOzAKCIgioIKI8hBQSUSNbZM+sn25iY1N2m7TbHfb7u7///nsOffe4SUqJspA9n7zyecDOOj5zTn3PO4MKIpEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJJJpJZjrnB5XTmrtdu3kceG0U/fboLsl3zx0SDTsVLRAIGClTScWIWqhGPTbrjsi+PEnSTekq0DVQIUZio9NJ/Lpk6d+G3cHBD87qTX2VY5uocJ1Kp5uarXMx34b+L58/kXNChgHQpIaQIW7QiFdsQJWLfOl3za+D6XHz9jK26L9Cle8Z2l82kge5v22853Zs01d66088Fq6Xy9flUvUsZt+W/pu5MtR0LSOS8/QhcIMPDOyQuE2qjc2YXmSgt/Gvgs5N4QyNtBR2kOhEPUaa+LJGvsRy0Kx8pzf9t6aYtLk6dMQjmKidq3uE9PEJ14AO6FZawE+fqb2uc1LLpg9A8YGPgyX/8riVzhUNZ/PlsSn7YCXMFmYZoTcLVS4g2GZUr7SukEKVLSTWUqpX9eEpzBMmRCeaugiyNW2wYOHivKN1p9ldy0jMztd3IM0uCrthemSxVUhmFy0VTVUhqO+NTBIqedC+MEnfhs+Nt+yMrAhjN/sU4Ihq1X0BAYkLlCt0peCArXv/LZ8TFpJXHqBgNor7F6ndoAK90kHjqrX4JC0OAurvDEgOb9tH4s6UTd4Lae9MBVyd9CfoRQedlbrFX/eF2gVU/Xb+LFIOUKU50S2+PZ7bUyS1YW/aWxJ9lyIcqMtv60fg6KNkclMFosPn7ASwaRYXxzjYfnnRq+IsJqJT/gKnXLKZrcjE07EbtRYpLrpuMl27cVvzIWtc/YiO+AhKyjMn+Fln82/mSLhsliPLZy4phm1cxItFxaK33vH6UY3SHm3ytXqZOqdWDZ7BQ6daMbi5OWLix9eDTZlxU+1biZlLvTKZ+zUJ8PH5evXXpOSZWXQTC0U6yN6lSBUSeE25kJv+lDp88kbfSt+bOx4DSnGqRUtXhF1P9c8VehCw5v76WJ7ynen0pZXAVgJMLJRQmj5p4sffn6aG/TlCyvdVy69ERmW7BO/bB+Lr7GMe50Yttk43etmKF2rnRASDz9+8so79FWb72ZgifTaVnoAT76Y6gb8M1BoeQ7BnSbeteCitHRV182/d5Op8su250Kvp6OsIahNdZh+yze1hUS2wnQRsWzVmWx8KLJjv7e7XY7e19oE2lPdfyfWmMQlEXQrXsKkab554X4OB+WTh+zgwjzvBrQD0fuwvcbpHjDqhPKm29v09YZfWJMsFFk9TzlR3rgldHVH6+6B6zhVWrXp3iAuJcRaMsSeKAjgTsQApKqJk28Hup6Xv+LhpzHW0FX7uqCTKZ+fmi64a9XCCs7nIpxsuYI0OtNtKsqjN+DUg/YFHh+FM6CJSXkdM+950W8JN3AaQ1v3MdyE4brF/QlhCuMFBumvb9mz2j/g+Oa5JWIUl2zAWJ/2lk3Zm+crCgNOY80NVjityvKqkcUgfdXeZyXCii8rWPbZD0EyVsWVx34LuJGCIyohhhxvyiBO2YUKGtCWSEt5pDFJmrVCE3uol20EUEzB2iIp+S3gRr4JCYXqLm4Vsrle19hKpM8vfluuK9/UMLeuahpMxIl/KsonIa+V0TZZHppynmT2ux00lIEAugvqB255h356BAfkP9U0FbfcWCNw8puSI6KVgaCOdPy2/2b+pWmbnkQIPLYxgYsOIzNUM74LKmdti2JaweJ4oLV/V5YdtYJJZpvqkakffmF2grSSqdBuF82bmypzIt2q/Uj3lAsoizSDQaqmrQxpddwqtrIVUSynHdZ4a1nhxW2DNzfgTtxq29YyZrxwAYO9zoJ0Q4NBK4ytjJXGcA7v+W3+GHxZY9fSMqu8xkHt58UwwyZcA5agoy1RqBwoPM26HagsRoZ13u4sXAmu21kDd7i1Le7GKgzEuBtV0bQKrD6sHwZU+DXtAF2Y5nXFWOcuj87EbRkJqjONRnqbtzQZo7Fhhswsem2nAeMFxC3dxYqRRr2Qc7QVLnCj/cpv68ehbKpUX0SN2gqGnhldCvzyR+ooct6AyR9ilVr4f53STQ3iF2oKb2Dp/pJWmwkfnobR3OqiBu1oYNsk5Wae7Unkz/5zbtLdNAyKW7Ta2MC5SldBpiZ6GsMK1D7z2/pxKBEnkiAkEt4Ckxtb/ZPC0z+jOw2dZrJ0p1Glm41tFR6w5pVWMpB1A6+nvu1mkONiqZ4r7s1Ht2pPhraU9khjm66v0SykU5iHoZUx2GrNapZhrelmyh+Tb0lXVNP+6tIPm+tZurtJlzahQuq0ollQ5+lq2gB9KlTJ6IzdcTLq1orfl+juhgo9nHZAq7zOL2qGkdVZ4o3PQF96Iy/MrZ39NF1bp3oA6jx9mNaMRabPdEnyD7/NuwNeJbMPN9ZUaNoy6xCYKw1PH0k1Z6DvHoc/11ZXqllYi5BpdiDbVlmxeHkw3Ttst2HhdWVFhdW4RfVdpo/S/bWTC7/NukPqzypr2erWGsxWK1WK8jJa+0e/rbpLHr05gIV4oC/tgr7VbLrRsM4/KIGKsnNwcPD22e5LZ3Ux3UivbKya07/Bdju23zz74/ez5tm///P6rQ5hqs7ABtvt2D7z2p58y3WqlbcfQhG8kke/thvtn/224n45e/PsAyn0V9K0/bbg3pmFG9kkkhliuVAoXLurWzwuFI6HtjbmWntXXdjeg9/n4zKtE7WfOHQm0XmHLFz3npbtzJuDL83RaDh5xaVtNewkfNydKhG9HzuvBG0Qeu11+GXn0uWXVkS96pLMXFj3dae/GMHRPOQRCbJLgdffip4yVWfoM1x7YVXVR9/dnSc3nbH7pRUDgakuh+xWE/X6+1+PzEu3j5aSpk5GX3Qq2TedsfsFb0ogA9t/zaiqm9fddReMjQi7puMujz68A1Fi+9jTpULDelrhGy5ysrC7NCsFrzopECU6eQ8L35cjfVhPwVFDh9e9hYXx+GG3PO/rZeGgow/rKZvq/J4yV8rleiryuVypuzWMycmGwA4WWy3PlfVc3+GlhVar9yH9w5Dq4P1v9WbLj51GjLihy9KqqboLylySkKRXp3Pw5L9dhRh2Ll6+iMdidoorOU4ScaeickpsN+bGyR7SZFECZ6yesqOxaHLylR9LQ2ygvM9BHokU2QLtBteh038aWNgFy1F+TZvdnoiO50fMlSO6HnZhdc+Hw2EbUi78BbdTJOwWHf2qruD+wIiLDPzVuiiHCy54iifZnK3q8V6AQdiZh2XHIQSvMtrMt66XXsvzasg8baZibAfczil5KBbOctx0CTGv7ArukYUY5sXgHINdBcU8gsmdKeXL7HjAhQrV8dO/pJDL44XUKF6H6fZBzYRqHgX5e8xUKcijRHXMSDNfB0friQcTVsju0YvbHLbUWPnCH0GzFWPLpg6NXX/JTGK8EeYxXMWnSs/x2Awk2GkpxVV+IZE3TU5dPCST/pjwcajXdfOqBXnEpPhg2asasO5ifRkCw051uU9DOvcuOh4/zAWJC5OQwlzHIxKjRLVZnr1lmbkbjnBtOJzwEb4CergwcCbTDIp0t6+cY9h5HzDELIJ5CvugULBPF/qL967YsYoYL8Zv6gfvAYIFf1nAHAV5ZH4ZH+RtnZ1xMHHg44QYa1HetKE7WZ5Cx+P5qdueeFiHpCh+nx7hiw+T1/yEP4WBJs5fKociJiExQH7MQ/YfMIslWf5CzstGGNG46oIuPyvYbjPJ7Ld4gwgkJvHi5Mh5YdYD3dLxDIJm5DSmRgbabPCpLuzshl3KFCeqALVS7ZRaEBs2c2GQ6t1VfCzOwyRBEwfLIXqVZ0NMDJD5iW4OzvMQdp6dTS/sjjwZ+QhUiWgi1m0XsGnybjhFdy7fo5pRQMQNXVJhgcczOohTQ+DI+OCkVDa7ge2FXTCseyeqXrYjEZI4NoXj8PfZ4i+o+kBSngiY6AazG+QRPSZewSQRGl46QXMg7FjRy5O+E1UvdkqQeqLccSyQ+RnLwyKNTvo+DdQwmN3Aq11J6GGI2UGjHpBeYHthx8b4gVJ+GBJ+hjqiiukQ24LEpK/BYR816KK9vvmX7cMNZ79cn51HIu+yZsU7YK6eqwePQ+Lj3Pj7RPFkBX/CLQ0muqHshtNcd5cJAlJUtR4YdrzbVuZgvGCVER3PZRQLRwTRvTJf6OXPDrgzOelySC6VQxyDutlg1HiO+dPmdnbDDrpbJiOnEicUjsQTEVhy/OPcfeVQzJUTJZd0XXsguwUjUTfZzZ3QtQ67UNmz3QjlD0vwdvbFCinbxa+IqsN8FDs6LZZKxQWoHwl8K/4FsS9XIG580sNTfQEYaIWD+Iq3VkpkxDxXhANE7snBwxa6swkPwJdlr+FTWJrl/VzvL3Tg4ZR94gsi7Db3H2DMd78tAt5rT/kn9NjXKtyqyWLLUqhqRtQZ+IKTo9u6ATob8wjm+mBuGTuZKYvIy4AbnMNbvaOTBIlxEiMEcnBy6m+GDtrh+eQtV1KT4Nd/wj8n7ky9B5UijMS3tjK/kCK2nYwed6b66wbek2D+Q1YnkUgkEolEIpFIJBKJRCKRSCQSiUQikYwk+K74bfhIho38aIC5Lg8u0fvZ3MB7pkL21ZpGyvnLlYwUfbXeSWsb6a2xxV2v0i+dN/nuXQROmcRp8OG96hulc1DpFXllDGUP/HXduGKHPduXTHvCB1/76GpJfuq6nstmjonfhkskEolEIpFIJBKJRCKRSCSS/2f+BxDOhtHhY3jlAAAAAElFTkSuQmCC" alt="Profile Image" width="100" height="100">
+
+    </div>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to FlyHigh Talent, where we redefine the landscape of bilingual executive search and transformative consulting.
+
+            Whether you're seeking exceptional candidates or strategic consulting solutions, trust FlyHigh Talent to elevate your organization to new levels of excellence. Experience the transformative power of FlyHigh Talent's comprehensive consulting solutions, as we partner with you to unlock the full potential of your organization and empower your workforce to thrive in the ever-evolving business landscape.</p>
+    </section>
+
+    <section id="section1">
+        <h2>Mission</h2>
+        <p>To redefine bilingual executive search and transformative consulting by delivering exceptional candidates and strategic solutions, empowering organizations to achieve unparalleled excellence.
+
+        </p>
+    </section>
+
+    <section id="section2">
+        <h2>Vision</h2>
+        <p>To be the foremost authority in bilingual executive search and transformative consulting, revolutionizing the industry through innovative solutions and exceptional talent that fuel sustainable success for our clients.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Empowering Growth</h2>
+        <p>Empower Your Team's Growth with Customized Leadership & Professional Development Initiatives. Whether it's nurturing the skills of seasoned executives or cultivating the potential of new talent, our targeted learning programs equip individuals at every level to excel in the ever-evolving business environment of today.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+
+<button id="goToTopBtn" onclick="goToTop()">Go to Top</button>
+
+<script>
+    // Show/Hide Go to Top button based on scroll position
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("goToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("goToTopBtn").style.display = "none";
+        }
+    };
+
+    // Scroll to top function
+    function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
