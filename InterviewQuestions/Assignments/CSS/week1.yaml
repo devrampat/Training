@@ -1,0 +1,27 @@
+Task 1
+Create a horizontal navigation bar using an unordered list. Style the navigation bar to make it visually appealing. Add hover effects for each navigation item.
+
+
+Task 2
+Design different types of buttons (e.g., primary, secondary, success, danger). Apply styles for hover and active states. Give all the color shared in rgba format.
+Primary Button: Blue color shade
+Secondary Button: Gray color shade
+Success: Green color shade
+Danger: Red color shade
+
+
+Task 3
+Create a web page and add background color with white shade.
+Add 3 sections. Each section should have
+
+Background image of you choice. Create your own theme.
+Some h1 text and short description.
+
+Once you scroll through sections the background should be fixed and only the content should be scrolled.
+
+
+Task 4
+Create a web page which should have a simple image gallery.
+Each image should have a hover effect.
+Once you hover on the image, it should show or talk about the image with a short description.
+Each Image should have a border.
