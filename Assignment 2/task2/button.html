@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Button Styles</title>
+</head>
+<body>
+
+<button class="btn primary">Primary Button</button>
+<button class="btn secondary">Secondary Button</button>
+<button class="btn success">Success Button</button>
+<button class="btn danger">Danger Button</button>
+
+</body>
+</html>
+<style>
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary {
+  background-color: rgba(52, 152, 219, 0.8);
+  color: #fff;
+}
+
+.secondary {
+  background-color: rgba(149, 165, 166, 0.8);
+  color: #fff;
+}
+
+.success {
+  background-color: rgba(46, 204, 113, 0.8);
+  color: #fff;
+}
+.danger {
+  background-color: rgba(231, 76, 60, 0.8);
+  color: #fff;
+}
+.btn:hover {
+    background-color: cornflowerblue;
+}
+.btn:active {
+    transform: translateY(1px)
+}
+</style>

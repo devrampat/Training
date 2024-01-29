@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Gallery</title>
+</head>
+<body>
+
+<div class="gallery">
+ <div class="image-container">
+    <img src="imags/ny.jpg" alt="Image 1">
+    <div class="image-overlay">
+    <h3>New York</h3>
+    <p>Months on ye at by esteem desire warmth former.His boy middleton sir nor engrossed affection excellent.Sigh view am high neat half to what. Sent late held than set why wife If an blessing building steepest.</p>
+    </div>
+    </div>
+    <div class="image-container">
+<img src="imags/sanf.jpg" alt="Image 2">
+    <div class="image-overlay">
+    <h3>San Fransico</h3>
+    <p>Months on ye at by esteem desire xcellent.Sigh view am high neat half to what. Sent late held than set why wife our. If an blessing building steepest.</p>
+    </div>
+    </div>
+    <div class="image-container">
+    <img src="imags/illinois.jpg" alt="Image 3">
+     <div class="image-overlay">
+    <h3>Chicago</h3>
+     <p> If an blessing building steepest.sir nor engrossed affection excellent. to what. Sent late held than set why wife our. </p>
+     </div>
+    </div>
+    <div class="image-container">
+    <img src="imags/las.jpg" alt="Image 4">
+    <div class="image-overlay">
+    <h3>Las Vegas</h3>
+    <p>Sure that that way gave any fond now. His boy middleton sir nor engrossed affectiSigh view am high neat half to what. Sent late held than set why wife our. If an blessing building steepest.on excellent.</p>
+    </div>
+    </div>
+    <div class="image-container">
+        <img src="imags/miami.jpeg" alt="Image 5">
+        <div class="image-overlay">
+        <h3>Miami</h3>
+        <p>Sure that that way gave any fond now. His boy middleton sir nor engrossed affectioSigham high neat half to what. Sent late held than set why wife our. If an blessing building steepest.n excellent.</p>
+        </div>
+        </div>
+    <div class="image-container">
+        <img src="imags/w.jpeg" alt="Image 6">
+        <div class="image-overlay">
+        <h3>Washington</h3>
+        <p>Sure that that way gave any fond now. His bouildingview am high neat half to what. Se steepest.llent.</p>
+        </div>
+        </div>
+    
+     </div>
+
+</body>
+</html>
+<style>
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  
+  margin: 10px;
+  border: 2px solid #272525;
+  overflow: hidden;
+  width: 600px; 
+  height: auto; 
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.1); 
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+</style>
