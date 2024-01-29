@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scrolling Sections</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcf4f4cd;
+    background-attachment: fixed;
+    background-size: 1800px;
+}
+
+#section1 {
+    background-image: url('pic1.png.jpg'); /* Replace 'section1.jpg' with your image file */
+}
+
+#section2 {
+    background-image: url('pic2.png.jpg'); /* Replace 'section2.jpg' with your image file */
+}
+
+#section3 {
+    background-image: url('pic3.png.jpg'); /* Replace 'section3.jpg' with your image file */
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Add some space between sections */
+.section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+</style>
+<body>
+
+<section class="section" id="section1">
+    <div class="content">
+        <h1>Sea lion</h1>
+        <p>Sea lions are pinnipeds characterized by external ear flaps, long foreflippers, the ability to walk on all fours, short and thick hair, and a big chest and belly. Together with the fur seals, they make up the family Otariidae, eared seals.</p>
+    </div>
+</section>
+
+<section class="section" id="section2">
+    <div class="content">
+        <h1>Squirrel</h1>
+        <p>In most squirrel species, the hind limbs are longer than the fore limbs, while all species have either four or five toes on each foot. The feet, which include an often poorly developed thumb, have soft pads on the undersides[13] and versatile, sturdy claws for grasping and climbing.</p>
+    </div>
+</section>
+
+<section class="section" id="section3">
+    <div class="content">
+        <h1>Crane</h1>
+        <p>Cranes are powerful flyers, with some having the ability to fly over the Himalayas. During migration cranes fly with their head and neck straight out and their feet and legs straight behind them. They are able to reach heights of 4,900–8,000 meters (16,000–26,000 ft)..</p>
+    </div>
+</section>
+
+</body>
+</html>
