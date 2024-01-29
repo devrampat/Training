@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyhigh</title>
+    <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0d0e0e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #0d0e0e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" onclick="redirectTo('home')">Home</a>
+        <a href="#" onclick="redirectTo('about')">About</a>
+        <a href="#" onclick="redirectTo('contact')">Contact Us</a>
+        <a href="products.html">Products</a>
+    </nav>
+    <img src="images/office.jpeg" alt="Company Image" width="80" height="80">
+    <h1>Fligh high</h1>
+</header>
+
+<section id="home">
+<h2>Home</h2>
+<p>Resources exquisite set arranging moonlight him household had. Months had too ham cousin remove far spirit. She procuring the why performed continual improving. Civil songs so large shade in cause. Lady an mr here must neat sold.</p>
+</section>
+
+<section id="section1">
+<h2>Section 1</h2>
+<p>Two before narrow not relied how except moment myself. Dejection assurance mrs led certainly. So gate at no only none open. Betrayed at properly it of graceful on. Dinner abroad am depart ye turned hearts as me wished.Folly was these three and songs arose whose. Of in vicinity contempt together in possible branched. Assured company hastily looking garrets in oh. Most have love my gone to this so. Discovered interested prosperous the our affronting insipidity day. Missed lovers way one vanity wishes nay but.</p>
+</section>
+
+<section id="section2">
+<h2>Section 2</h2>
+<p>Greatly hearted has who believe. Drift allow green son walls years for blush. Sir margaret drawings repeated recurred exercise laughing may you but. Do repeated whatever to welcomed absolute no. Fat surprise although outlived and informed shy dissuade property. Musical by me through he drawing savings an. No we stand avoid decay heard mr. Common so wicket appear to sudden worthy on.Folly was these three and songs arose whose. Of in vicinity contempt together in possible branched. Assured company hastily looking garrets in oh. Most have love my gone to this so. Discovered interested prosperous the our affronting insipidity day. Missed lovers way one vanity wishes nay but.</p>
+</section>
+
+<section id="section3">
+<h2>Section 3</h2>
+<p>Folly was these three and songs arose whose. Of in vicinity contempt together in possible branched. Assured company hastily looking garrets in oh. Most have love my gone to this so. Discovered interested prosperous the our affronting insipidity day. Missed lovers way one vanity wishes nay but. Inhabiting discretion the her dispatched decisively boisterous joy. So form were wish open is able of mile of. Waiting express if prevent it we an musical. Especially reasonable travelling she son. Resources resembled forfeited no to zealously. Has procured daughter how friendly followed repeated who surprise. Great asked oh under on voice downs. Law together prospect kindness securing six. Learning why get hastened smallest cheerful.</p>
+</section>
+
+<button onclick="goToTop()">Go to Top</button>
+
+<script>
+    function redirectTo(page) {
+        if (page === 'home') {
+            window.location.href = 'home.html';
+        } else if (page === 'about') {
+            window.location.href = 'about.html';
+        } else if (page === 'contact') {
+            window.location.href = 'contact.html';
+        }
+    }
+
+    function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
