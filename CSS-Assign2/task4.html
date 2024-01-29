@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>Task4</title>
+    <style>
+      .container {
+        width: 100%;
+        position: relative;
+      }
+
+      img {
+        border: 3px solid black;
+        width: 100%;
+        height: 150%;
+      }
+      .middle {
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        left: 50px;
+        right: 50px;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba(121, 59, 59, 0.5);
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; background-color: palevioletred">
+      Image Gallery
+    </h1>
+    <div class="flexcontainer">
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1704109505638-e703e04eb299?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg0fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="butterfly"
+        />
+        <div class="middle">
+          <p class="text">
+            Butterflies and moths have been recognised by the Government as
+            indicators of biodiversity. Their fragility makes them quick to
+            react to change so their struggle to survive is a serious warning
+            about our environment.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1704402864101-1185cc83f92c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="dogs img"
+        />
+        <div class="middle">
+          <p class="text">
+            Domestic dogs are mostly kept as pets, though many breeds are
+            capable of surviving on their own, whether it's in a forest or on
+            city streets.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1705179910388-0dfc2c21a3f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="Puppy"
+        />
+        <div class="middle">
+          <p class="text">
+            A puppy is a juvenile dog. Some puppies can weigh 1–1.5 kg, while
+            larger ones can weigh up to 7–11 kg. All puppies display primary
+            altriciality and healthy puppies grow quickly after birth.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1704875940244-299752f81346?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQzfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="Bird img"
+        />
+        <div class="middle">
+          <p class="text">
+            Birds are a group of warm-blooded vertebrates constituting the class
+            Aves, characterised by feathers, toothless beaked jaws, the laying
+            of hard-shelled eggs.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1576915171862-ddcd40a1fecb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDcxfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="animal pic"
+        />
+        <div class="middle">
+          <p class="text">
+            Animal, any of a group of multicellular eukaryotic organisms thought
+            to have evolved independently from the unicellular eukaryotes.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1704319180538-f57994377412?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          alt="Pigeon"
+        />
+        <div class="middle">
+          <p class="text">
+            The bird genus Columba comprises a group of medium to large pigeons.
+            The terms "dove" and "pigeon" are used indiscriminately for smaller
+            and larger Columbidae, respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
