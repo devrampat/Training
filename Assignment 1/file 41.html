@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Of Memphis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #goToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="firstpic.jpg" alt="Profile Image" width="50" height="50">
+            <span>University of Memphis</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Academic">Academic</a>
+            <a href="#Research">Research</a>
+            <a href="#Campus Life">Campus Life</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Home</h1>
+        <p>Memphis is an above-average public university located in Memphis, Tennessee. It is a large institution with an enrollment of 11,142 undergraduate students. The Memphis acceptance rate is 95%. Popular majors include Kinesiology and Exercise Science, Liberal Arts and Humanities, and Nursing.</p>
+        <nav>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+        </nav>
+    </section>
+
+    <section id="Academic">
+        <h1>Academic</h1>
+        <p>An academic usually stick to one specific field of study. Some of these fields include: Humanities include, but are not limited to: literature and writing, history, sociology, theology, and philosophy. Math includes, but is not limited to: engineering, statistics, and computer science.</p>
+    </section>
+
+    <section id="Research">
+        <h1>Research</h1>
+        <p>The University of Memphis has been named an R1 institution by the Carnegie Classification of Institutions of Higher Education, putting the UofM in the top tier of research universities nationally..</p>
+    </section>
+
+    <section id="Campus Life">
+        <h1>Campus Life</h1>
+        <p>Student Engagement
+            Registered Student Organizations.
+            Fraternity & Sorority Life.
+            Student Activities Council.
+            Student Event Allocations.
+            Spirit Initiatives.
+            TigerZone.
+            Involvement Ambassadors.
+            Religious Life.</p>
+    </section>
+
+    <section id="Student Life">
+        <h1>Section 1</h1>
+        <p>Student organizations, clubs, and extracurricular activities.
+            Housing options and on-campus amenities.
+            Student services, including counseling, health services, and career development..</p>
+    </section>
+
+    <section id="International Student Events">
+        <h1>Section 2</h1>
+        <p>Study abroad programs and exchange opportunities.
+            International student services and support.
+            Global partnerships and collaborations..</p>
+    </section>
+
+    <section id="Diversity and Inclusion">
+        <h1>Section 3</h1>
+        <p>Initiatives and programs promoting diversity and inclusion.
+            Resources for underrepresented groups.
+            Cultural events and celebrations.</p>
+    </section>
+
+    <footer>
+        © 2024 Simple Website
+    </footer>
+
+    <button id="goToTop" onclick="goToTop()">Go to Top</button>
+
+    <script>
+        // Show/Hide "Go to Top" button based on scroll position
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var scrollToTopButton = document.getElementById("goToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        }
+
+        // Scroll to top when button is clicked
+        function goToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+
+</html>
