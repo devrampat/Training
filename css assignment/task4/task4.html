@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task 4</title>
+</head>
+<body>
+
+<div class="gallery">
+ <div class="image-container">
+    <img src="images/image.webp" alt="Image 1">
+    <div class="image-overlay">
+    <h3>Flute</h3>
+    <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. </p>
+    </div>
+    </div>
+    <div class="image-container">
+<img src="images/Image2.jpg" alt="Image 2">
+    <div class="image-overlay">
+    <h3>Drums</h3>
+    <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. </p>
+    </div>
+    </div>
+    <div class="image-container">
+    <img src="images/image3.jpg" alt="Image 3">
+     <div class="image-overlay">
+    <h3>Veena</h3>
+     <p> Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring.  </p>
+     </div>
+    </div>
+    <div class="image-container">
+    <img src="images/image4.jpg" alt="Image 4">
+    <div class="image-overlay">
+    <h3>Instruments</h3>
+    <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. </p>
+    </div>
+    </div>
+    <div class="image-container">
+        <img src="images/image5.avif" alt="Image 5">
+        <div class="image-overlay">
+        <h3>Piano</h3>
+        <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. </p>
+        </div>
+        </div>
+    <div class="image-container">
+        <img src="images/image6.jpg" alt="Image 6">
+        <div class="image-overlay">
+        <h3>Music</h3>
+        <p>Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. </p>
+        </div>
+        </div>
+    
+     </div>
+
+</body>
+</html>
+<style>
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  
+  margin: 10px;
+  border: 2px solid #272525;
+  overflow: hidden;
+  width: 400px; 
+  height: auto; 
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.1); 
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+</style>
