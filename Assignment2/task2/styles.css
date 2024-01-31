@@ -1,0 +1,61 @@
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.primary {
+  background-color: rgba(0, 0, 255, 0.8); 
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: rgba(0, 0, 255, 1); 
+}
+
+.primary:active {
+  background-color: rgba(0, 0, 255, 0.6); 
+}
+
+.secondary {
+  background-color: rgba(169, 169, 169, 0.8); 
+  color: #fff;
+}
+
+.secondary:hover {
+  background-color: rgba(169, 169, 169, 1); 
+}
+
+.secondary:active {
+  background-color: rgba(169, 169, 169, 0.6); 
+}
+
+.success {
+  background-color: rgba(0, 128, 0, 0.8); 
+  color: #fff;
+}
+
+.success:hover {
+  background-color: rgba(0, 128, 0, 1); 
+}
+
+.success:active {
+  background-color: rgba(0, 128, 0, 0.6); 
+}
+
+.danger {
+  background-color: rgba(255, 0, 0, 0.8); 
+  color: #fff;
+}
+
+.danger:hover {
+  background-color: rgba(255, 0, 0, 1); 
+}
+
+.danger:active {
+  background-color: rgba(255, 0, 0, 0.6); 
+}
