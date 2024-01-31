@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Gallery</title>
+</head>
+<body>
+
+<div class="gallery">
+ <div class="image-container">
+    <img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2024/01/Devara-306x393.jpg" alt="Image 1">
+    <div class="image-overlay">
+    <h3>Devara</h3>
+    <p>Devara: Part 1 is an upcoming Indian Telugu-language action drama film written and directed by Koratala Siva. Produced by Sudhakar Mikkilineni and Kosaraju Harikrishna under the banners Yuvasudha Arts and N. T. R.</p>
+    </div>
+    </div>
+    <div class="image-container">
+<img src="https://m.media-amazon.com/images/M/MV5BNGZlNTFlOWMtMzUwNC00ZDdhLTk0MWUtOGZjYzFlOTBmNDdhXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_FMjpg_UX1000_.jpg" alt="Image 2">
+    <div class="image-overlay">
+    <h3>Pushpa 2</h3>
+    <p>Violence erupts between red sandalwood smugglers and the police charged with bringing down their organisation in the Seshachalam forests of South India.</p>
+    </div>
+    </div>
+    <div class="image-container">
+    <img src="https://m.media-amazon.com/images/M/MV5BOTRmNDNjYTItYmM3My00NjZlLWIzMGQtZjgwNmI4MGNlYmVjXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_.jpg" alt="Image 3">
+     <div class="image-overlay">
+    <h3>OG</h3>
+     <p> OG is an upcoming Indian Telugu-language epic action film written and directed by Sujeeth and produced by D. V. V. Danayya of DVV Entertainment. </p>
+     </div>
+    </div>
+    <div class="image-container">
+    <img src="https://m.media-amazon.com/images/M/MV5BZTYzNGVlZGQtMjYzNi00M2MzLWE5OTktNTQzMDg2M2M1NDYzXkEyXkFqcGdeQXVyMTQ0NTA1NzY5._V1_FMjpg_UX1000_.jpg" alt="Image 4">
+    <div class="image-overlay">
+    <h3>Kanguva</h3>
+    <p>Kanguva:- Chapter 1, also known and marketed as Kanguva: A Mighty Valiant Saga, is an upcoming Indian Tamil-language fantasy action film directed by Siva and produced by K. E. Gnanavel Raja, V. Vamsi Krishna Reddy and Pramod Uppalapati under the banners of Studio Green and UV Creations.</p>
+    </div>
+    </div>
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Image 5">
+        <div class="image-overlay">
+        <h3>Game Changer</h3>
+        <p>Game Changer is an upcoming Indian Telugu-language political action thriller film directed by S. Shankar in his Telugu directorial debut and written by Karthik Subbaraj.</p>
+        </div>
+        </div>
+    <div class="image-container">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00361924-qbkmjrbczq-landscape.jpg" alt="Image 6">
+        <div class="image-overlay">
+        <h3>Eagle</h3>
+        <p>Eagle is an upcoming Indian Telugu-language action thriller film written and directed by cinematographer Karthik Gattamneni, who also previously directed Surya vs Surya. It is produced by T. G. Vishwa Prasad and Vivek Kuchibhotla, under People Media Factory.</p>
+        </div>
+        </div>
+    
+     </div>
+
+</body>
+</html>
+<style>
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  
+  margin: 10px;
+  border: 2px solid #272525;
+  overflow: hidden;
+  width: 300px; 
+  height: 300px; 
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.1); 
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+</style>
