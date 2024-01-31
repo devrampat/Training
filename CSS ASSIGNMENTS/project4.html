@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>CSS Assignment4</title>
+    <style>
+      .container {
+        width: 100%;
+        position: relative;
+      }
+
+      img {
+        border: 4px solid rgba(239, 81, 94, 0.792);
+        width: 100%;
+        height: 150%;
+      }
+      .middle {
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        left: 50px;
+        right: 50px;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba(249, 78, 78, 0.342);
+      }
+      .text {
+        color: rgba(249, 248, 248, 0.911);
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; background-color: rgba(212, 213, 199, 0.717)">
+      My Image Gallery
+    </h1>
+    <div class="flexcontainer">
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="INDIA"
+        />
+        <div class="middle">
+          <p class="text">
+            The national flag of India, also known as the "Tiranga" (meaning tricolor), is a symbol of the country's sovereignty and identity. It consists of three horizontal stripes of equal width. The top stripe is saffron, representing courage and sacrifice. The middle stripe is white, symbolizing truth, peace, and purity. The bottom stripe is green, representing faith, valor, and fertility.
+            In the center of the white stripe, there is a navy blue Ashoka Chakra (wheel) with 24 spokes. The Ashoka Chakra signifies the dharma (duty) and represents the law of dharma governing the life force. The navy blue color symbolizes the sky and the limitless potential of the nation.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1610361418971-50cb8d1f8339?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=" Taj Mahal"
+        />
+        <div class="middle">
+          <p class="text">
+            The Taj Mahal is a world-renowned white marble mausoleum located in Agra, India, commissioned by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Completed in 1653, the Taj Mahal is celebrated for its symmetrical design, intricate carvings, and lush gardens. It stands as an iconic symbol of love and is recognized as one of the New Seven Wonders of the World. The mausoleum's architectural brilliance, combined with its cultural and historical significance, attracts millions of visitors annually.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1616435577207-ca90abc6b732?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Lotus"
+        />
+        <div class="middle">
+          <p class="text">
+            The lotus is a symbol of purity, beauty, and spiritual enlightenment in various cultures, especially in Asia. It is a water plant with large, distinctive, and often fragrant flowers. The lotus has a unique ability to grow in muddy waters but still emerges clean and untouched.
+            The lotus holds significant symbolism in Hindu mythology. It is associated with various deities, especially Goddess Lakshmi, the goddess of wealth and prosperity, who is often depicted sitting on a lotus.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Parrot"
+    
+        />
+        <div class="middle">
+          <p class="text">
+            Parrots are colorful and intelligent birds known for their vibrant plumage, distinctive vocalizations, and ability to mimic human speech. Belonging to the order Psittaciformes, there are over 350 different species of parrots, found in tropical and subtropical regions around the world.
+            Parrots are highly intelligent birds with problem-solving abilities. Some species, such as the African Grey Parrot, are known for their remarkable cognitive skills and ability to mimic human speech.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="DOG"
+        />
+        <div class="middle">
+          <p class="text">
+            Dogs were likely the first animals to be domesticated by humans, and they have been living alongside people for thousands of years. This close association has led to a strong bond between dogs and humans.
+            Dogs have been bred for specific tasks, such as herding livestock, guarding property, assisting people with disabilities, and working in various professional capacities, including search and rescue and police work.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
