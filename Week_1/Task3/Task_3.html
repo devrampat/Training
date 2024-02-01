@@ -1,0 +1,84 @@
+<!--
+Task 3
+Create a web page and add background color with white shade.
+Add 3 sections. Each section should have
+Background image of you choice. Create your own theme.
+Some h1 text and short description.
+Once you scroll through sections the background should be fixed and only the content should be scrolled.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Sections with Fixed Background</title>
+    <style>
+        body {
+            font-family: 'Arial';
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        section {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #section1 {
+            background-image: url('sky.jpeg');
+        }
+
+        #section2 {
+            background-image: url('nature.png');
+        }
+
+        #section3 {
+            background-image: url('water.jpeg');
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <div>
+            <h1>SKY</h1>
+            <p>This is the first section with a background image of sky. Enjoy!</p>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div>
+            <h1>NATURE</h1>
+            <p>This is the second section with a background image of nature. Enjoy!</p>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div>
+            <h1>WATER</h1>
+            <p>This is the third section with a backgroung image of water. Enjoy!</p>
+        </div>
+    </section>
+
+</body>
+</html>
