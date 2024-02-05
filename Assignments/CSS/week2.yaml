@@ -1,0 +1,32 @@
+#Week 2:
+--Task 1
+  Create a simple HTML page with an unordered list of items.
+  Apply different styles to the list items using pseudo-classes such as 
+  :hover, :first-child, :last-child, and :nth-child.
+  Experiment with different properties for each pseudo-class to enhance the user experience.
+
+
+--Task 2
+  Create a container with a fixed height and width.
+  Add a long paragraph of text inside the container.
+  Use the overflow property to make sure that the text:
+  Hides the overflow content with overflow: hidden.
+  Adds a scrollbar for the overflow content with overflow: scroll.
+  Automatically displays a scrollbar if needed with overflow: auto.
+
+--Task 3
+  Create a responsive navigation bar using flexbox.
+  Include a logo, navigation links, and a search bar.
+  Ensure that the navigation bar adjusts its layout for different screen sizes using media queries.
+  Use flex properties to make the navigation items stack vertically on smaller screens.
+
+--Task 4
+  Create a flex container with several nested flex items.
+  Experiment with the flex-grow, flex-shrink, and flex-basis properties.
+  Implement a card layout where the cards adjust their size based on content and available space.
+
+--Task 5
+  Create a responsive grid layout using CSS Grid to 
+  showcase a gallery of images. 
+  The grid should adapt to different screen sizes, providing a 
+  pleasant user experience on both desktop and mobile devices.
