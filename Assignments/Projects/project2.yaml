@@ -1,0 +1,14 @@
+Show list of players in a football team.
+Make use of localstorage to save the list of players.
+Players can be added and removed from the local storage 
+and same should be visible on the webpage.
+To add a player, webpage should have "Add" button.
+To remove any player, each player should have a "Remove" button.
+
+Add styling of your choice to make it look beautiful.
+
+If the user tries to add players more than 10 (team size), 
+display an alert saying "Team can have only 10 players."
+
+Try making all the elements and your interface more intuitive.
+
