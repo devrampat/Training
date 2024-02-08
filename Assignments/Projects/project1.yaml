@@ -1,0 +1,10 @@
+Create 3 selectors to select the below options.
+1. Color
+2. Width
+3. Height
+
+Create a container with default parameters selected above.
+Create a button "Set". Once the button is clicked, the container will
+change the stylings based on the options selected.
+
+Make use of DOM Manipulations and basic javascript.
