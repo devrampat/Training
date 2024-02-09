@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Styling</title>
+<style>
+  #container 
+  {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+</style>
+</head>
+<body>
+
+<select id="colorSelector">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="Orange">orange</option>
+</select>
+
+<select id="widthSelector">
+  <option value="200px">200px</option>
+  <option value="300px">300px</option>
+  <option value="400px">400px</option>
+  <option value="500px">500px</option>
+</select>
+
+<select id="heightSelector">
+  <option value="200px">200px</option>
+  <option value="300px">300px</option>
+  <option value="400px">400px</option>
+  <option value="500px">500px</option>
+</select>
+
+<div id="container"></div>
+
+<button onclick="applyStyles()">Apply Styles</button>
+
+
+<script>
+    function applyStyles() {
+      var color = document.getElementById("colorSelector").value;
+      var width = document.getElementById("widthSelector").value;
+      var height = document.getElementById("heightSelector").value;
+      
+      var container = document.getElementById("container");
+      container.style.backgroundColor = color;
+      container.style.width = width;
+      container.style.height = height;
+    }
+    </script>
+</body>
+</html>
