@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team Manager</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #teamContainer {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-remove {
+            background-color: #FF5555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="teamContainer">
+        <h2>Football Team</h2>
+        
+        <div id="playersList"></div>
+
+        <button onclick="addPlayer()" class="btn">Add Player</button>
+    </div>
+
+    <script>
+        // Function to get players from localStorage
+        function getPlayers() {
+            return JSON.parse(localStorage.getItem('players')) || [];
+        }
+
+        // Function to save players to localStorage
+        function savePlayers(players) {
+            localStorage.setItem('players', JSON.stringify(players));
+            displayPlayers();
+        }
+
+        // Function to display players on the webpage
+        function displayPlayers() {
+            var playersList = document.getElementById('playersList');
+            playersList.innerHTML = '';
+
+            var players = getPlayers();
+
+            players.forEach(function(player, index) {
+                var playerDiv = document.createElement('div');
+                playerDiv.className = 'player';
+
+                var playerName = document.createElement('span');
+                playerName.textContent = player;
+                playerDiv.appendChild(playerName);
+
+                var removeBtn = document.createElement('button');
+                removeBtn.textContent = 'Remove';
+                removeBtn.className = 'btn btn-remove';
+                removeBtn.onclick = function() {
+                    removePlayer(index);
+                };
+                playerDiv.appendChild(removeBtn);
+
+                playersList.appendChild(playerDiv);
+            });
+        }
+
+        // Function to add a player
+        function addPlayer() {
+            var players = getPlayers();
+
+            if (players.length >= 10) {
+                alert('Team can have only 10 players.');
+                return;
+            }
+
+            var playerName = prompt('Enter player name:');
+            
+            if (playerName) {
+                players.push(playerName);
+                savePlayers(players);
+            }
+        }
+
+        // Function to remove a player
+        function removePlayer(index) {
+            var players = getPlayers();
+            players.splice(index, 1);
+            savePlayers(players);
+        }
+
+        // Initial display of players
+        displayPlayers();
+    </script>
+
+</body>
+</html>
