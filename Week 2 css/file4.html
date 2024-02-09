@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            margin: 12px;
+            border: 2px solid #333;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            border-color: #007bff; /* Change to the color you want on hover */
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .description {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <title>Image Gallery</title>
+</head>
+<body>
+
+<h1>Simple Image Gallery</h1>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="pic5.png" alt="Image 1">
+        <div class="overlay">
+            <div class="description">
+                <h3>Camel</h3>
+                <p>Camels do sleep. They actually can sleep standing up, which helps keep them safe from predators. They sleep about six hours per night, and can withstand major temperature changes from the sweltering heat of the day to the cold desert nights..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="pic2.png.jpg" alt="Image 2">
+        <div class="overlay">
+            <div class="description">
+                <h3>Squirrel</h3>
+                <p>In most squirrel species, the hind limbs are longer than the fore limbs, while all species have either four or five toes on each foot. The feet, which include an often poorly developed thumb, have soft pads on the undersides[13] and versatile, sturdy claws for grasping and climbing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more gallery items as needed -->
+
+</div>
+
+</body>
+</html>
