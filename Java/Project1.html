@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Container</title>
+    <style>
+        #styledContainer {
+            border: 1px solid black;
+            margin: 150px;
+            padding: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="colorSelector">Color:</label>
+    <select id="colorSelector">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <br>
+
+    <label for="widthSelector">Width:</label>
+    <select id="widthSelector">
+        <option value="100px">100px</option>
+        <option value="200px">200px</option>
+        <option value="300px">300px</option>
+    </select>
+
+    <br>
+
+    <label for="heightSelector">Height:</label>
+    <select id="heightSelector">
+        <option value="50px">50px</option>
+        <option value="100px">100px</option>
+        <option value="150px">150px</option>
+    </select>
+
+    <br>
+
+    <button onclick="setContainerStyles()">Set</button>
+
+    <div id="styledContainer">This is the styled container.</div>
+
+    <script>
+        function setContainerStyles() {
+            var color = document.getElementById("colorSelector").value;
+            var width = document.getElementById("widthSelector").value;
+            var height = document.getElementById("heightSelector").value;
+
+            var styledContainer = document.getElementById("styledContainer");
+            
+            styledContainer.style.backgroundColor = color;
+            styledContainer.style.width = width;
+            styledContainer.style.height = height;
+        }
+    </script>
+
+</body>
+</html>
