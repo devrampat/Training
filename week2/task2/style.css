@@ -1,0 +1,11 @@
+.container {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000000;
+  overflow: scroll;
+  background-color: rgb(205, 182, 223);
+}
+
+.container p {
+  padding: 10px;
+}

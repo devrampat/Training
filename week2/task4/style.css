@@ -1,0 +1,26 @@
+h2 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 8em;
+  background-color: #cddf8f;
+  padding: 1.25em;
+  margin: 0.625em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}

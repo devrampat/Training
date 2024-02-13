@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.625em;
+  border-bottom: 0.0625em solid #ccc;
+}
+
+li:hover {
+  background-color: #000000;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  background-color: #fcce63;
+}
+
+li:nth-child(even) {
+  background-color: #f49a54;
+}
