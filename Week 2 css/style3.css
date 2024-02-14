@@ -1,0 +1,49 @@
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcf4f4cd;
+    background-attachment: fixed;
+    background-size: 1800px;
+}
+
+#section1 {
+    background-image: url('pic1.png.jpg'); /* Replace 'section1.jpg' with your image file */
+}
+
+#section2 {
+    background-image: url('pic2.png.jpg'); /* Replace 'section2.jpg' with your image file */
+}
+
+#section3 {
+    background-image: url('pic3.png.jpg'); /* Replace 'section3.jpg' with your image file */
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Add some space between sections */
+.section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+</style>
