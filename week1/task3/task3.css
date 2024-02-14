@@ -1,0 +1,18 @@
+.section1{
+    background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Natural-Wood-Panels-Simple-Background-Image.jpeg");
+    background-size: cover;
+    height: 210px;
+    color: white;
+    overflow: auto;
+}
+.section2{
+    background-image: url("https://media.istockphoto.com/id/1456866576/vector/seamless-geometric-vector-pattern.jpg?s=612x612&w=0&k=20&c=I4kx34CMETvRYE1xWFOF47I0nMUqYax03UijwHUKfQI=");
+    height: 210px;
+    overflow: auto;
+}
+.section3{
+    background-image: url("https://w0.peakpx.com/wallpaper/1002/930/HD-wallpaper-simple-background-background-design-template.jpg");
+    height: 300px;
+    overflow: auto;
+}
+

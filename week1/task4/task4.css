@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    margin-right: 10px;
+}
+img{
+    height: 200px;
+    width:400px;
+    cursor: pointer;
+}
+img:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+}
