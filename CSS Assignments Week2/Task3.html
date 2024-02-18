@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Bar</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    background-color: #c8c2c2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-logo img {
+    height: 50px; 
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-links li {
+    margin-left: 20px;
+  }
+
+  .search-bar {
+    flex: 1;
+    margin-left: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-logo {
+      margin-bottom: 10px;
+    }
+
+    .navbar-links {
+      flex-direction: column;
+    }
+
+    .navbar-links li {
+      margin: 5px 0;
+    }
+
+    .search-bar {
+      margin: 10px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="https://media.istockphoto.com/id/963736536/photo/alphabet-letter-m-uppercase-grassy-font-made-of-fresh-green-grass-3d-render-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=PXFTtIvSmjyo72vYO6WIk7QqoIOAe5oRCDpEfquP8Ts=" alt="Logo">
+  </div>
+  <ul class="navbar-links">
+    <li><a href="#Home"target="_blank">Home</a></li>
+    <li><a href="#About"target="_blank">About</a></li>
+    <li><a href="#Services"target="_blank">Services</a></li>
+    <li><a href="#Contact"target="_blank">Contact</a></li>
+  </ul>
+  <input type="text" class="search-bar" placeholder="Search...">
+</nav>
+
+</body>
+</html>

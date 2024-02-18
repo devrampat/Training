@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Container</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <select id="color">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="orange">orange</option>
+    </select>
+
+    <select id="width">
+        <option value="100px">100px</option>
+        <option value="200px">200px</option>
+        <option value="300px">300px</option>
+    </select>
+
+    <select id="height">
+        <option value="100px">100px</option>
+        <option value="200px">200px</option>
+        <option value="300px">300px</option>
+    </select>
+
+    <button id="setButton">Set</button>
+
+    <div class="container" id="container">
+        Default Container
+    </div>
+
+    <script>
+        document.getElementById('setButton').addEventListener('click', function() {
+            var color = document.getElementById('color').value;
+            var width = document.getElementById('width').value;
+            var height = document.getElementById('height').value;
+
+            var container = document.getElementById('container');
+            container.style.backgroundColor = color;
+            container.style.width = width;
+            container.style.height = height;
+        });
+    </script>
+</body>
+</html>

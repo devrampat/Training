@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #0b5307;
+        }
+        #players-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .player-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .player-card h3 {
+            margin-top: 0;
+            color: #150909;
+        }
+        .add-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1096f0;
+            color: #e4dcdc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Football Team Manager</h1>
+
+    <div id="players-container">
+        <!-- Player cards will be added here dynamically -->
+    </div>
+
+    <button id="add-player" class="add-button">Add Player</button>
+
+    <script>
+        // Function to render players from localStorage
+        function renderPlayers() {
+            const playersContainer = document.getElementById('players-container');
+            playersContainer.innerHTML = '';
+
+            const players = JSON.parse(localStorage.getItem('players')) || [];
+
+            players.forEach(player => {
+                const playerCard = document.createElement('div');
+                playerCard.classList.add('player-card');
+                playerCard.innerHTML = `
+                    <h3>${player}</h3>
+                    <button class="remove-button">Remove</button>
+                `;
+                playersContainer.appendChild(playerCard);
+
+                // Add event listener to remove button
+                playerCard.querySelector('.remove-button').addEventListener('click', () => {
+                    const updatedPlayers = players.filter(p => p !== player);
+                    localStorage.setItem('players', JSON.stringify(updatedPlayers));
+                    renderPlayers();
+                });
+            });
+        }
+
+        // Function to handle adding a player
+        function addPlayer() {
+            const players = JSON.parse(localStorage.getItem('players')) || [];
+            const playerName = prompt('Enter the name of the player:');
+            if (playerName) {
+                if (players.length >= 10) {
+                    alert('Team can have only 10 players.');
+                } else {
+                    players.push(playerName);
+                    localStorage.setItem('players', JSON.stringify(players));
+                    renderPlayers();
+                }
+            }
+        }
+
+        document.getElementById('add-player').addEventListener('click', addPlayer);
+
+        // Initial rendering of players
+        renderPlayers();
+    </script>
+</body>
+</html>

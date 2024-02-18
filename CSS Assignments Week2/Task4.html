@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Card Layout</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 calc(33.33% - 20px); /* Initial flex properties */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .card {
+      flex-basis: calc(50% - 20px); /* Set flex-basis to adjust the initial size */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .card {
+      flex-basis: calc(100% - 20px); /* Set flex-basis to adjust the initial size */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>Card 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nunc ut commodo suscipit, enim dolor eleifend lorem.</p>
+  </div>
+  <div class="card">
+    <h2>Card 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nunc ut commodo suscipit, enim dolor eleifend lorem. Duis commodo tellus ac est fermentum, nec consequat felis suscipit.</p>
+  </div>
+  <div class="card">
+    <h2>Card 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nunc ut commodo suscipit, enim dolor eleifend lorem. Duis commodo tellus ac est fermentum, nec consequat felis suscipit. Aenean bibendum, arcu eget vulputate volutpat, nisi justo luctus nunc, ut aliquam dui nulla nec nisi.</p>
+  </div>
+  <div class="card">
+    <h2>Card 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nunc ut commodo suscipit, enim dolor eleifend lorem. Duis commodo tellus ac est fermentum, nec consequat felis suscipit. Aenean bibendum, arcu eget vulputate volutpat, nisi justo luctus nunc, ut aliquam dui nulla nec nisi. Suspendisse malesuada malesuada massa, eu gravida eros varius eget.</p>
+  </div>
+</div>
+
+</body>
+</html>
